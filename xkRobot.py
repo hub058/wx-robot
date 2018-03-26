@@ -345,11 +345,11 @@ def getreply(msgstr,who):
             myException("STEP OF get num of friends","getreply msgstr=%s"%msgstr,e)
             return '发给我 你的好友数量哦~'
     # 3=等待付款中哦[呲牙] 转账后立即开始(第三部测试的时候注释了测试完成需要放开)
-    # elif thiscustomer.step == 3 :
-    #     return dict_stepinfo[3]
+    elif thiscustomer.step == 3 :
+        return dict_stepinfo[3]
     #测试中，请稍等[呲牙]
-    # elif thiscustomer.step == 3 :
-    #     return dict_stepinfo[4]
+    elif thiscustomer.step == 3 :
+        return dict_stepinfo[4]
     elif thiscustomer.step == 3 :
         try:
             if int(msgstr) == 1:
